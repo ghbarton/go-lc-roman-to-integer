@@ -8,18 +8,23 @@ import (
 func Test(t *testing.T) {
 	testCases := []struct {
 		name string
-		data bool
-		exp  bool
+		data string
+		exp  int
 	}{
 		{
-			name: "returns true",
-			data: false,
-			exp:  true,
+			name: "returns 3",
+			data: "III",
+			exp:  3,
 		},
 		{
-			name: "returns false",
-			data: true,
-			exp:  false,
+			name: "returns 58",
+			data: "LVIII",
+			exp:  58,
+		},
+		{
+			name: "returns 1994",
+			data: "MCMXCIV",
+			exp:  1994,
 		},
 	}
 	for _, tc := range testCases {
