@@ -28,3 +28,4 @@ go.work.sum
 /.idea/go-leet-code-template.iml
 /.idea/modules.xml
 /.idea/vcs.xml
+.idea/
